@@ -1,0 +1,10 @@
+{
+	"ImportPath": "github.com/kkdai/rss-webserver",
+	"GoVersion": "go1.6",
+	"Deps": [
+		{
+			"ImportPath": "github.com/kkdai/githubrss",
+			"Rev": "73c26245c8913209ca48fd043122020ee8981337"
+		}
+	]
+}
