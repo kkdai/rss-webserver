@@ -1,9 +1,30 @@
 rss-webserver:
 ==============
 
- [![GoDoc](https://godoc.org/github.com/kkdai/rss-webserver?status.svg)](https://godoc.org/github.com/kkdai/rss-webserver)  [![Build Status](https://travis-ci.org/kkdai/githubrss.svg?branch=master)](https://travis-ci.org/kkdai/rss-webserver)
+ [![GoDoc](https://godoc.org/github.com/kkdai/rss-webserver?status.svg)](https://godoc.org/github.com/kkdai/rss-webserver)  [![Build Status](https://travis-ci.org/kkdai/rss-webserver.svg?branch=master)](https://travis-ci.org/kkdai/rss-webserver)
 
 
+
+
+
+How to use it
+=============
+
+Here is an exist Heroku Server which you can try directly.
+
+```
+
+//Get Github Starred RSS by user "kkdai"
+http://githubrss.herokuapp.com/starred?kkdai
+
+//Get Github Follower RSS by user "kkdai"
+http://githubrss.herokuapp.com/follower?kkdai
+
+
+//Get Github Following RSS by user "kkdai"
+http://githubrss.herokuapp.com/following?kkdai
+
+```
 
 
 Publish to Heroku

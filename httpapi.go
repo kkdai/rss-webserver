@@ -22,23 +22,6 @@ import (
 	github "github.com/kkdai/githubrss"
 )
 
-// func ServeFollowed(w http.ResponseWriter, r *http.Request) {
-// 	key := r.RequestURI
-// 	switch {
-// 	case r.Method == "GET":
-// 		//call api
-// 		key = key[1:]
-// 		log.Println("[GET]FOLLOWED ID", key)
-// 		rss := github.NewGithubRss(key)
-// 		ret, _ := rss.GetFollower(5)
-// 		fmt.Fprintf(w, ret)
-// 		// log.Println("[GET] ID", ret)
-// 	default:
-// 		w.Header().Add("Allow", "GET")
-// 		http.Error(w, "Method not allowed", http.StatusMethodNotAllowed)
-// 	}
-// }
-
 func starred(w http.ResponseWriter, r *http.Request) {
 	id := strings.Trim(r.RequestURI, "/starred")
 	id = strings.Trim(id, "?")
@@ -64,7 +47,6 @@ func following(w http.ResponseWriter, r *http.Request) {
 }
 
 func serveHttpAPI(port string, existC chan bool) {
-	// exit when receivee error channel
 	go func() {
 		if err, ok := <-existC; ok {
 			log.Fatal(err)
