@@ -26,27 +26,30 @@ http://githubrss.herokuapp.com/following?kkdai
 
 ```
 
+**note**: If you occur any problem with connect to [http://githubrss.herokuapp.com](http://githubrss.herokuapp.com), it is not code problem. Because I use Heroku free account and the quota is full because IFTTT query.  XD
 
 Publish to Heroku
 =============
 
-```
-//Login heroku
-heroku login
 
-//Using Golang backpack
-heroku create -b https://github.com/kr/heroku-buildpack-go.git
+- Login heroku
+  - `heroku login`
 
-//Push your complete code to Heroku
-git push heroku master
-```
+- Using Golang backpack
+  - `heroku create -b https://github.com/kr/heroku-buildpack-go.git`
+
+- Vendoring: For Go 1.5/1.6. Refer [here](https://devcenter.heroku.com/articles/go-support#migrating-from-go1-5-godep-workspace-to-go1-6-with-a-vendor-directory)
+   - `godep save`
+- Push your complete code to Heroku
+  - `git push heroku master`
+
 
 
 Add "Deploy to Heroku"
 =============
 
-- copy [app.json](https://raw.githubusercontent.com/kkdai/rss-webserver/master/app.json)
-- Remember must include [buildpack](https://devcenter.heroku.com/articles/app-json-schema#buildpacks).
+- copy [app.json](https://raw.githubusercontent.com/kkdai/rss-webserver/master/app.json) (refer more spec [here](https://devcenter.heroku.com/articles/app-json-schema#buildpacks))
+- Remember must include [buildpack](https://devcenter.heroku.com/articles/app-json-schema#buildpacks). And all buildpack list [here](https://devcenter.heroku.com/articles/buildpacks#officially-supported-buildpacks).
 
 
 Installation and Usage
