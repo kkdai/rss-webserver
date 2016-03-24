@@ -42,6 +42,13 @@ git push heroku master
 ```
 
 
+Add "Deploy to Heroku"
+=============
+
+- copy [app.json](https://raw.githubusercontent.com/kkdai/rss-webserver/master/app.json)
+- Remember must include [buildpack](https://devcenter.heroku.com/articles/app-json-schema#buildpacks).
+
+
 Installation and Usage
 =============
 

@@ -2,7 +2,7 @@
   "name": "RSS WebServer in Golang",
   "description": "A rss provider for specific service in Golang",
   "repository": "https://github.com/kkdai/rss-webserver",
-  "keywords": ["rss", "go", "static"]
+  "keywords": ["rss", "go", "static"],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-go"
