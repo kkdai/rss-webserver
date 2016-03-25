@@ -61,6 +61,7 @@ Installation and Usage
 Inspired By
 =============
 
+- [Github Status RSS feeder](https://github.com/kkdai/githubrss)
 - [Heroku Deploy](https://devcenter.heroku.com/articles/heroku-button)
 - [Heroku deploy Go](http://dougblack.io/words/a-restful-micro-framework-in-go.html)
 
