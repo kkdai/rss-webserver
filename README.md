@@ -31,13 +31,14 @@ http://githubrss.herokuapp.com/following?kkdai
 Publish to Heroku
 =============
 
-
+- Init git and commit your code.
+	- `git init`
+	- `git add .`
+	- `git commit -m "init project"`
 - Login heroku
   - `heroku login`
-
 - Using Golang backpack
   - `heroku create -b https://github.com/kr/heroku-buildpack-go.git`
-
 - Vendoring: For Go 1.5/1.6. Refer [here](https://devcenter.heroku.com/articles/go-support#migrating-from-go1-5-godep-workspace-to-go1-6-with-a-vendor-directory)
    - `godep save`
 - Push your complete code to Heroku

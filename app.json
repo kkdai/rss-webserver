@@ -5,7 +5,7 @@
   "keywords": ["rss", "go", "static"],
   "buildpacks": [
     {
-      "url": "https://github.com/heroku/heroku-buildpack-go"
+      "url": "https://github.com/kr/heroku-buildpack-go.git"
     },
     {
       "url": "heroku/go"
