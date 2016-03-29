@@ -45,7 +45,7 @@ Publish to Heroku
    - Save your dependency `godep save github.com/kkdai/githubrss`
    - Submit your depdendency 	
 	   - `git add .`
-	   - `git commit -m "godep"
+	   - `git commit -m "godep"`
 - Push your complete code to Heroku
   - `git push heroku master`
 
