@@ -40,14 +40,12 @@ Publish to Heroku
 - Using Golang backpack
   - `heroku create -b https://github.com/kr/heroku-buildpack-go.git`
 
-- Vendoring: For Go 1.6. 
-   - `go get -u github.com/kardianos/govendor`
-   - Init vendoring `govendor init`
-   - List all vendor module `govendor list`
-   - Add it into `govendor add github.com/kkdai/githubrss`
-   - Commit all vendor module 
+- Vendoring: For Go 1.6 (refer [here](https://devcenter.heroku.com/articles/go-support#migrating-from-go1-5-godep-workspace-to-go1-6-with-a-vendor-directory))
+   - `go get -u github.com/tools/godep`
+   - Save your dependency `godep save github.com/kkdai/githubrss`
+   - Submit your depdendency 	
 	   - `git add .`
-	   - `git commit -m "govendor dependency"`
+	   - `git commit -m "godep"
 - Push your complete code to Heroku
   - `git push heroku master`
 
