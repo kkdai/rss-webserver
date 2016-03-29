@@ -57,7 +57,18 @@ Add "Deploy to Heroku"
 
 - copy [app.json](https://raw.githubusercontent.com/kkdai/rss-webserver/master/app.json) (refer more spec [here](https://devcenter.heroku.com/articles/app-json-schema#buildpacks))
 - Remember must include [buildpack](https://devcenter.heroku.com/articles/app-json-schema#buildpacks). And all buildpack list [here](https://devcenter.heroku.com/articles/buildpacks#officially-supported-buildpacks).
+- Make sure your buildpack sync with what you use
+	- In my case, I use `https://github.com/kr/heroku-buildpack-go.git`:
 
+```  
+"buildpacks": [
+    {
+      "url": "https://github.com/kr/heroku-buildpack-go.git"
+    },
+    {
+      "url": "heroku/go"
+    }	
+```	
 
 Installation and Usage
 =============
