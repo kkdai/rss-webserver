@@ -1,7 +1,7 @@
 rss-webserver:
 ==============
 
- [![GoDoc](https://godoc.org/github.com/kkdai/rss-webserver?status.svg)](https://godoc.org/github.com/kkdai/rss-webserver)  [![Build Status](https://travis-ci.org/kkdai/rss-webserver.svg?branch=master)](https://travis-ci.org/kkdai/rss-webserver)
+ [![GoDoc](https://godoc.org/github.com/kkdai/rss-webserver?status.svg)](https://godoc.org/github.com/kkdai/rss-webserver) ![Go](https://github.com/kkdai/rss-webserver/workflows/Go/badge.svg)
 
 
 
